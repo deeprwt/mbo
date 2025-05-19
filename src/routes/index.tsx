@@ -15,9 +15,6 @@ const MBOManagementDetailsPage = lazy(
 // const OutletDetailsPage = lazy(
 //   () => import("@/pages/outlet/OutletDetailsPage")
 // );
-const MBOCreationPage = lazy(() =>
-  import("@/pages/mbo-creation/MBOCreationPage")
-);
 const UserManagementPage = lazy(
   () => import("@/pages/users/UserManagementPage")
 );
@@ -52,10 +49,6 @@ export const protectedRoutes = [
         path: "home",
         element: <HomePage />,
       },
-          {
-      path: "mbo-creation", // ✅ Add it here
-      element: <MBOCreationPage />,
-    },
       {
         path: "debug",
         element: <DebugRoutes />,
